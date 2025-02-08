@@ -11,6 +11,8 @@
     <title>Document</title>
 
     <style>
+
+        /* Id selecotr */
         #color_1{
             color: rgb(201, 17, 17);
         }
@@ -18,15 +20,24 @@
             color: yellow;
         }
 
+        /* Class selector */
         .about_info{
             color: aqua;
         }
 
-
+        /* Group selector (Id+Id, Class+class, Id+class) */
        #head_3, .abouthead {
 
          color: blue;
        }
+
+       /* Decendent Selector  used without comma.*/
+
+       #div1 p{
+        color: rgb(19, 226, 36);
+       }
+
+       
     </style>
  </head>
  <body>
@@ -49,3 +60,20 @@
 
     <h3 id="head_3" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, architecto.</h3>
     <p class="abouthead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est labore dignissimos repellat aperiam reiciendis nobis, eius accusamus. Ratione vero debitis vel impedit veritatis suscipit illum architecto! Animi vitae sit quis qui repellendus? Quisquam ipsa dolore, alias molestias minima excepturi odio quaerat magni, nesciunt dolores corrupti, ipsam consequatur ut distinctio asperiores explicabo quis magnam! Molestiae quam, quis, libero iusto hic magni velit voluptatem reprehenderit molestias non rem tenetur voluptas laborum obcaecati animi vero alias ex soluta? Architecto cum quos nulla odio tempora, cumque saepe inventore sequi recusandae maiores omnis consequatur in veniam dolor laborum vitae obcaecati. Earum quod harum unde, atque similique obcaecati dolorum nisi eligendi ex at, repellat cum repellendus sunt hic ipsam minima maxime nobis? Libero exercitationem alias distinctio.</p>
+
+    <hr>
+
+    <h2>Decendent selector</h2>
+    <!-- In this  -->
+
+    <div id="div1">
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati fuga ipsam tempore corrupti ex minima quis voluptas deleniti, doloremque dolorem fugiat vel officia numquam illo, ratione saepe dolores praesentium veritatis?</p>
+
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa placeat ab mollitia expedita reiciendis quos aspernatur architecto. Quos, repudiandae sit itaque, consectetur a illum commodi unde voluptate saepe quam in.</p>
+        
+    </body>
+     
+    </html>
