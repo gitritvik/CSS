@@ -1,0 +1,13 @@
+/* // In this styling we create a seprate css file for html file and then add this file in html file using tag. */
+
+th{
+    color: blue;
+}
+
+td{
+    color: brown;
+}
+
+caption{
+    color: rgb(49, 230, 124);;
+}
