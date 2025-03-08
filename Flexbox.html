@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+
+    <!-- If space is not enought in container, the Item size will ge shrink to fit  -->
+
+    <!-- To avoid shrink to fit  we use flex- wrap properties-->
+    <style>
+        #container{
+            height: 500px;
+            width: 600px;
+
+            background-color: khaki;
+
+            border: 5px solid red;
+
+            display: flex;
+            flex-direction: row-reverse;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+        }
+
+        #container1{
+            height: 500px;
+            width: 600px;
+            margin: 10px;
+
+            background-color: khaki;
+
+            border: 5px solid red;
+
+            display: flex;
+            justify-content: left;
+            justify-content: center;
+            justify-content: space space-evenly;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: right;
+            
+        }
+        #container2{
+            height: 500px;
+            width: 600px;
+            margin: 10px;
+
+            background-color: khaki;
+
+            border: 5px solid red;
+
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap wrap-reverse; */
+            
+            
+        }
+        #container3{
+            height: 500px;
+            width: 600px;
+            margin: 10px;
+
+            background-color: khaki;
+
+            border: 5px solid red;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            /* align-items: baseline; */
+            /* align-items: end; */
+            /* align-items: start; */
+            
+            
+            
+            
+        }
+
+        .div2{
+            height: 40px;
+            width: 250px;
+            background-color: red;
+            border: 5px solid rgb(14, 13, 13);
+            margin: 5px; padding: 5px;
+            
+        }
+        
+        .div1{
+            height: 100px;
+            width: 250px;
+            background-color: red;
+            border: 5px solid rgb(14, 13, 13);
+            margin: 5px; padding: 5px;
+            
+        }
+        .div{
+            height: 40px;
+            width: 50px;
+            background-color: rgb(81, 233, 81);
+            margin: 5px;
+            padding: 2px;
+            border: 3px solid rgb(3, 3, 3);
+            box-sizing: border-box; 
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Flex Properties</h2>
+    <div id="container">
+        <div id="Item1" class="div">Item1</div>
+        <div id="Item2" class="div">Item2</div>
+        <div id="Item3" class="div">Item3</div>
+        <div id="Item4" class="div">Item4</div>
+    </div>
+
+    <h2>flex justify-content</h2>
+    <div id="container1">
+        <div id="Item5" class="div">Item5</div>
+        <div id="Item6" class="div">Item6</div>
+        <div id="Item7" class="div">Item7</div>
+        <div id="Item8" class="div">Item8</div>
+    </div>
+
+
+    <h2>flex- wrap protperties </h2>
+    <div id="container2">
+        <div id="Item9" class="div1">Item9</div>
+        <div id="Item10" class="div1">Item10</div>
+        <div id="Item11" class="div1">Item11</div>
+        <div id="Item12" class="div1">Item12</div>
+    </div>
+    <h2>flex-box align iteam protperties </h2>
+    <div id="container3">
+        <div id="Item13" class="div2">Item13</div>
+        <div id="Item14" class="div2">Item14</div>
+        <div id="Item15" class="div2">Item15</div>
+        <div id="Item16" class="div2">Item16</div>
+        <div id="Item16" class="div2">Item16</div>
+       
+    </div>
+   
+</body>
+</html>
