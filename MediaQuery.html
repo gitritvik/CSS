@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .md{
+            height: 80px; width: 70px;
+            margin: 20px;
+            padding: 5px;
+            background-color: rgb(139, 95, 95);
+        }
+
+        @media screen and (min-width: 300px) {
+
+            .md{
+                height: 110px; width: 170px;
+                margin: 20px;
+                padding: 5px;
+
+                background-color: rgb(56, 33, 83);
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="md">
+            <div id="box1">Box1</div>
+            
+        </div>
+    </main>
+</body>
+</html>
